@@ -25,7 +25,7 @@ a.nav-link:hover {
 
 hr {
   text-align: center;
-  width: 300px;
+  width: 200px;
   height:3px;
   background-color:#52edc7;
 }
@@ -98,6 +98,7 @@ hr {
   background-image: url(../img/bg-portfolio.png);
   -webkit-background-size: cover;
   background-size: cover;
+  padding-bottom: 500px;
 }
 
 .portfolio-text {
@@ -110,7 +111,7 @@ hr {
 .portfolio-img {
   display: block;
   margin: 0 auto;
-  padding-bottom: 45px;
+  padding-bottom: 300px;
 }
 
 .photobox {
@@ -193,3 +194,34 @@ span.photobox__label {
 .fa-link {
   color: #fff;
 }
+
+.process {
+  background-image: url(../img/bg-skills.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.process-text {
+  color: #fff;
+  letter-spacing: 20px;
+  padding-top: 100px;
+  margin-bottom: 45px;
+}
+
+.process-img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+
+.process-block {
+  padding-bottom: 300px;
+}
+
+.contact {
+  background-image: url(../img/bg-contact.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 880px;
+}
+

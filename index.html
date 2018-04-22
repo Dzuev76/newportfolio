@@ -9,7 +9,7 @@
     <title>NewPortfolio</title>
   </head>
 <body>
-  <header class="parallax-window" data-parallax="scroll" data-image-src="img/bg-header.png">
+  <header class="parallax-window" data-parallax="scroll" data-image-src="img/bg-header.png" id="header">
     <div class="container-fluid">
       <nav class="navbar navbar-expand-sm navbar-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,11 +17,11 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link text-uppercase" href="#">about me<span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link text-uppercase" href="#">my skills</a>
-            <a class="nav-item nav-link text-uppercase" href="#">portfolio</a>
-            <a class="nav-item nav-link text-uppercase" href="#">process</a>
-            <a class="nav-item nav-link text-uppercase" href="#">contact</a>
+            <a class="nav-item nav-link text-uppercase" href="#about" id="anchor-link-1">about me<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link text-uppercase" href="#skills" id="anchor-link-2">my skills</a>
+            <a class="nav-item nav-link text-uppercase" href="#portfolio" id="anchor-link-3">portfolio</a>
+            <a class="nav-item nav-link text-uppercase" href="#process" id="anchor-link-4">process</a>
+            <a class="nav-item nav-link text-uppercase" href="#contact" id="anchor-link-5">contact</a>
           </div>
         </div>
       </nav>
@@ -39,7 +39,7 @@
       </div>
     </div>
   </header>
-  <div class="container-fluid about">
+  <div class="container-fluid about" id="about">
     <h2 class="about-text text-uppercase text-center">about me</h2>
       <img src="img/about.png" class="img-fluid about-img" alt="about">
       <h6 class="about-description text-center">Hi, my name is Dmitriy. Engaged in the development of sites from scratch, turnkey. I perform the layout and programming of sites. I add all the necessary functionality to the site. Do adaptive layout on Bootstrap, so your site will look great on all devices. Any started project I finish, constantly I improve the professional level. You can order my development site from scratch, or contact me for cooperation.</h6>
@@ -51,7 +51,7 @@
         <a href="https://telegram.me/Dzuev76"><i class="fab fa-telegram"></i></a>
       </div>
   </div>
-  <div class="container-fluid skills">
+  <div class="container-fluid skills" id="skills">
     <h2 class="skills-text text-uppercase text-center">skills</h2>
       <img src="img/skills.png" class="img-fluid skills-img" alt="skills">
         <div class="row circle-scills">
@@ -63,7 +63,7 @@
           <div class="circle-block text-center col-lg-2 col-md-4 col-sm-6 col-6"><div class="circle" id="circles-6"></div><p class="circle-description text-center text-uppercase">word press</p></div>
       </div>
   </div>
-  <div class="portfolio">
+  <div class="portfolio" id="portfolio">
     <h2 class="portfolio-text text-uppercase text-center">portfolio</h2>
       <img src="img/img-portfolio.png" class="img-fluid portfolio-img" alt="img-portfolio">
   <div class="container">
@@ -169,7 +169,7 @@
     </div>
   </div>
   </div>
-  <div class="container-fluid process">
+  <div class="container-fluid process" id="process">
     <h2 class="process-text text-uppercase text-center">process</h2>
       <img src="img/img-process.png" class="img-fluid process-img" alt="process">
       <div class="row process-block align-items-center justify-content-center">
@@ -208,7 +208,7 @@
         </div>
       </div>
   </div>
-  <div class="container-fluid contact">
+  <div class="container-fluid contact" id="contact">
     <h2 class="contact-text text-uppercase text-center">contact</h2>
       <img src="img/img-contact.png" class="img-fluid contact-img" alt="contact">
       <form action="https://formspree.io/dzuev76@gmail.com" method="POST" class="col-lg-4 mx-auto">
@@ -219,10 +219,13 @@
           <input type="email"  name="_replyto" class="form-control" aria-describedby="emailHelp" placeholder="E-mail" required>
         </div>
         <div class="form-group">
-          <textarea name="message" cols="40" rows="6" class="form-control" required></textarea>
+          <textarea name="message" cols="40" rows="6" class="form-control" placeholder="Message" required></textarea>
         </div>
         <button type="submit" value="Send" class="btn btn_submit text-uppercase">send</button>
       </form>
+       <div class="row justify-content-end">
+        <a href="#header"><i class="fas fa-chevron-circle-up" id="anchor-link-6"></i></a>
+      </div>
     </div>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

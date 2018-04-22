@@ -100,5 +100,68 @@ var myCircle = Circles.create({
   styleText:           true
 });
 
+$(document).ready(function(){
+        $("#anchor-link-1").on("click", function(){
+            var scroll=$("#about").offset().top;
+            $('html, body').animate({scrollTop: scroll}, 3000);
+        });
+    });
 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 
+$(document).ready(function(){
+        $("#anchor-link-2").on("click", function(){
+            var scroll=$("#skills").offset().top;
+            $('html, body').animate({scrollTop: scroll}, 3000);
+        });
+    });
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+$(document).ready(function(){
+        $("#anchor-link-3").on("click", function(){
+            var scroll=$("#portfolio").offset().top;
+            $('html, body').animate({scrollTop: scroll}, 3000);
+        });
+    });
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+$(document).ready(function(){
+        $("#anchor-link-4").on("click", function(){
+            var scroll=$("#process").offset().top;
+            $('html, body').animate({scrollTop: scroll}, 3000);
+        });
+    });
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+$(document).ready(function(){
+        $("#anchor-link-5").on("click", function(){
+            var scroll=$("#contact").offset().top;
+            $('html, body').animate({scrollTop: scroll}, 3000);
+        });
+    });
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+$(document).ready(function(){
+        $("#anchor-link-6").on("click", function(){
+            var scroll=$("#header").offset().top;
+            $('html, body').animate({scrollTop: scroll}, 5000);
+        });
+    });
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})

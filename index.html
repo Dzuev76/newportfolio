@@ -225,63 +225,34 @@
       </form>
     </div>
 
-<style type="text/css">
-form#feedback-form {
-  font-family: Arial, Sans-Serif;
-  font-size: 13px;
-  padding: 10px;
-  width: 310px;
-  background-color: #d6e5f4;
-  color: #000000;
-}
-form#feedback-form h4 {
-  margin:0px;
-}
-form#feedback-form input, form#feedback-form textarea {
-  font-family: Arial, Sans-Serif;
-  font-size: 13px;
-  margin-bottom: 5px;
-  display: block;
-  padding: 4px;
-  width: 300px;
-}
-form#feedback-form img {
-  vertical-align:middle;
-}
-form#feedback-form img#captcha-feedback-img {
-  margin-bottom: 5px;
-}
-form#feedback-form .activeField {
-  background-image: none;
-  background-color: #ffffff;
-  border: solid 1px #33677F;
-}
-form#feedback-form .idle {
-  border: solid 1px #85b1de;
-  background-image: url('http://help-komputers.ru/emitfeedback/gray_bg.png');
-  background-repeat: repeat-x;
-  background-position: top;
-  background-color:#FFFFFF;
-}
-form#feedback-form input[type=submit] {
-  margin-top:10px;
-}
-</style>
-<form method="post" action="http://help-komputers.ru/emitfeedback/send.php" enctype="multipart/form-data" accept-charset="UTF-8" id="feedback-form" style="background-color: rgb(214, 229, 244); color: rgb(0, 0, 0); width: 310px;">
-    <h4>Обратная связь</h4>
-    <hr>
-    <div>
-  <label>Ваше имя:</label>
-  <input type="text" name="field[Ваше имя]" class="idle" onblur="this.className='idle'" onfocus="this.className='activeField'" style="width: 300px;">
-  <label>E-mail:</label>
-  <input type="text" name="field[E-mail]" class="idle" onblur="this.className='idle'" onfocus="this.className='activeField'" style="width: 300px;">
-  <label>Сообщение:</label>
-  <textarea name="field[Сообщение]" rows="4" cols="30" class="idle" onblur="this.className='idle'" onfocus="this.className='activeField'" style="width: 300px;"></textarea></div>
-    <label>Введите текст, показанный на картинке:</label>
-    <label style="text-align:center;display:block"><img src="http://help-komputers.ru/emitfeedback/kcaptcha/" id="captcha-feedback-img"> <a href="javascript:document.getElementById('captcha-feedback-img').src='http://help-komputers.ru/emitfeedback/kcaptcha/?'+new Date().getTime();void(0);"><img src="http://help-komputers.ru/emitfeedback/refresh.png"></a></label>
-    <input type="text" name="keystring" autocomplete="off" class="idle" onblur="this.className='idle'" onfocus="this.className='activeField'" style="width: 300px;">
-    <input type="submit" value="Отправить" class="idle" onblur="this.className='idle'" onfocus="this.className='activeField'" style="width: 300px;">
-</form>
+ <div class="container">
+
+      <div class="row">
+        <div class="col-sm-4">
+          <form action="mail.php" method="POST">
+            <legend>Заголовок формы</legend>
+
+            <div class="form-group">
+              <label for="">Введите ваше имя</label>
+              <input type="text" class="form-control" id="" name="user_name" placeholder="Например, Иван">
+            </div>
+
+            <div class="form-group">
+              <label for="">Введите номер телефона</label>
+              <input type="text" class="form-control" id="" name="user_phone" placeholder="+7 (999) 99 99 999">
+            </div>
+
+            <div class="form-group">
+              <label for="">Введите email</label>
+              <input type="text" class="form-control" id="" name="user_email" placeholder="mail@mail.ru">
+            </div>
+
+            <button type="submit" class="btn">Отправить форму</button>
+          </form>
+        </div><!-- .col-sm-4 -->
+      </div> <!-- .row -->
+
+    </div><!-- /.container -->
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/parallax.js"></script>

@@ -211,48 +211,19 @@
   <div class="container-fluid contact">
     <h2 class="contact-text text-uppercase text-center">contact</h2>
       <img src="img/img-contact.png" class="img-fluid contact-img" alt="contact">
-      <form action="contact.php" method="post" class="col-lg-4 mx-auto">
+      <form action="https://formspree.io/dzuev76@gmail.com" method="POST" class="col-lg-4 mx-auto">
         <div class="form-group">
           <input type="text" name="name" class="form-control" placeholder="Name" required>
         </div>
         <div class="form-group">
-          <input type="email"  name="email" class="form-control" aria-describedby="emailHelp" placeholder="E-mail" required>
+          <input type="email"  name="_replyto" class="form-control" aria-describedby="emailHelp" placeholder="E-mail" required>
         </div>
         <div class="form-group">
           <textarea name="message" cols="40" rows="6" class="form-control" required></textarea>
         </div>
-        <button type="submit" class="btn btn_submit text-uppercase">send</button>
+        <button type="submit" value="Send" class="btn btn_submit text-uppercase">send</button>
       </form>
     </div>
-
- <div class="container">
-
-      <div class="row">
-        <div class="col-sm-4">
-          <form action="mail.php" method="POST">
-            <legend>Заголовок формы</legend>
-
-            <div class="form-group">
-              <label for="">Введите ваше имя</label>
-              <input type="text" class="form-control" id="" name="user_name" placeholder="Например, Иван">
-            </div>
-
-            <div class="form-group">
-              <label for="">Введите номер телефона</label>
-              <input type="text" class="form-control" id="" name="user_phone" placeholder="+7 (999) 99 99 999">
-            </div>
-
-            <div class="form-group">
-              <label for="">Введите email</label>
-              <input type="text" class="form-control" id="" name="user_email" placeholder="mail@mail.ru">
-            </div>
-
-            <button type="submit" class="btn">Отправить форму</button>
-          </form>
-        </div><!-- .col-sm-4 -->
-      </div> <!-- .row -->
-
-    </div><!-- /.container -->
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/parallax.js"></script>
